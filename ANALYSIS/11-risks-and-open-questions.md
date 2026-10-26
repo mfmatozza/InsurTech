@@ -18,7 +18,7 @@
 | 12 | Gestionale format dependency | Tech/market | Written specs at step 0; Data Act leverage | No spec by G2 |
 | 13 | Unwritten internship terms | Legal | Nothing from that into the MVP | — |
 | 14 | Audit read as wider distribution than planned | Legal | Opinion before pilot | Brokers asking to "see the gaps" |
-| 15 | Advantage buyable by competitors | Strategy | Schema, rules, golden set, measured quality | Gestionali announcing similar features |
+| 15 | Advantage buyable by competitors | Strategy | Schema, rules, golden set, measured quality | Gestionali announcing similar features; Covera (already live in France) adding Italian gestionali/extranets |
 
 Most probable *real-world* failure (BASELINE): not a spectacular error but a **silent** one: a scanned endorsement without a clear policy number is attached to the wrong policy or left orphaned, and the sum insured never changes. Put it first in the synthetic bench.
 
