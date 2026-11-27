@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background: #f7f6f1;
+  color: #1c2620;
+}
+
+main {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 3vw, 2rem);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 4.5vw, 4rem);
+  line-height: 1.1;
+}

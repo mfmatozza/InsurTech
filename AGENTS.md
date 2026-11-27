@@ -2,12 +2,52 @@
 
 Keep this repo small, clean and organized.
 
+## Product and MVP
+
+- InsurTech is an AI-native insurance broker for Italian businesses, starting with SMEs and a working target of fewer than 500 employees. The first vertical is open, with broader commercial coverage as the long-term goal.
+- The MVP makes quote requests fast and clear. Collect the information our team needs to request quotes from insurers.
+- Start website work only when the user explicitly requests it. The first page is a public landing page with a quote-request CTA in the hero. Use placeholders until the public name and logo are chosen. The CEO demo uses “Attimo” as concept branding.
+- The customer journey is a short contact and company wizard, sign-in, then a guided chat for risk details and optional policy uploads for coverage-gap review.
+- Admin and customer dashboards follow the quote-request flow.
+
+## Product principles
+
+Based on the CEO memo *Dal primo strumento al broker del futuro* and its concept video.
+
+- Collect each fact once in a reusable company risk profile. Keep sources and corrections in an append-only record. Link extracted policy facts to the document and page.
+- The “cassetto delle polizze” shows coverages, gaps and expiry dates in plain language. AI prepares the analysis, rules flag gaps, an insurance specialist checks critical facts, and an authorized intermediary signs off before sharing it with the client.
+- Own the profile, audit trail and insurance workflow. Use replaceable providers for standard services. Measure extraction quality on a held-out benchmark and track human review time.
+- Treat uploads as untrusted data. Keep customer data in the EU and redact personal data before sending text to external models.
+- Automated carrier submissions, price estimates, offer comparison and signing are future capabilities. Demo prices and response times are illustrative.
+
+## Stack
+
+- The app lives in `app/` at the repository root. Use Next.js App Router and TypeScript. Run `npm run dev` on port `3000`. Vite is prohibited.
+- Follow root `design.md` for all interface work.
+- Use PostgreSQL. Neon is the preferred initial host, with a later move to AWS. Keep the schema and migrations portable across PostgreSQL hosts.
+- Use Resend initially for outbound email only. The AWS email service will be selected during migration.
+
+## Legacy archive
+
+- `legacy/` contains historical material. Exclude it from searches and automatic context. Open or use archived files only when the user explicitly asks. See `legacy/AGENTS.md` for the archive rule.
+
+## Repository hygiene
+
 - Fewest files possible. Edit existing files before creating new ones; delete what you replace.
-- Put things where `ANALYSIS/04-stack-and-repo.md` says. No stray files in the root; no scratch scripts or notes committed.
+- Keep the root for agent instructions and app files. Keep scratch scripts and notes out of commits.
 - One language per job: TypeScript for app and infra, Python only in `eval/`.
-- Do not add yourself as author
-- In commits state what the commit did using conventional keyword plus bullet point explanation of the changes
+- Do not add yourself as author.
+- In commits, use a conventional keyword in the subject and explain the changes in bullets.
 - No new dependency if stdlib/platform/existing deps do it.
 - Never commit real documents or personal data. Only synthetic or public fixtures. Never put document text in logs, tests or tickets.
-- `BASELINE/` is read-only source material. `ANALYSIS/` holds decisions: log real ones in `ANALYSIS/DECISIONS.md`.
 - Don't add docs, abstractions or config "for later".
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
