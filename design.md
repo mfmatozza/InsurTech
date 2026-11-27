@@ -1,17 +1,26 @@
 # Design
 
+## Direzione visiva della landing
+
+- **Apertura a tutta larghezza.** Fai partire la sfumatura dal verde luminoso `#C8E8C5` dietro l’header. Mantieni l’header in alto e passa al bianco appena si scorre. Raggruppa titolo e azione sullo stesso asse. A 390 × 844 e 1440 × 900 px lascia intravedere circa 48 px della sezione seguente. Lascia crescere la hero con zoom o testo più lungo.
+- **Scala editoriale.** Componi il titolo su due o tre righe ampie su desktop, in un unico colore. Usa dimensione e a capo per dare enfasi al messaggio. Raggruppa i controlli con la stessa funzione in una superficie compatta.
+- **Campo della hero.** Mostra il prompt sulla riga del testo. Mantieni posizione e altezza del campo al focus e durante la digitazione. Evidenzia il focus sul bordo della superficie.
+- **Invito allo scroll.** Mostra il bordo e l’inizio di una sezione vera, con una domanda o un titolo che invogli a proseguire. Usa un contenuto editoriale ampio e leggibile anche a 390 px. Elimina i mockup, i riquadri di riempimento e le didascalie che descrivono il lavoro in corso.
+- **Ritmo.** Raccorda l’apertura al primo blocco chiaro e riserva il verde profondo `#163526` a uno stacco più avanti. Mantieni gli stessi margini laterali. Dai a ogni blocco un fulcro visivo e lascia che il contenuto determini l’altezza.
+
 ## Composizione
 
 - Una gerarchia per schermata. Titolo, contenuto e azione principale devono distinguersi a colpo d’occhio. Usa un solo pulsante pieno per gruppo di azioni.
 - Allinea testo, visual e controlli a bordi comuni. Usa una lista, una tabella o una sezione aperta secondo la struttura del contenuto.
-- Lascia spazio vuoto. Elimina i blocchi che servono solo a riempire la griglia e le altezze forzate per pareggiare contenuti diversi.
+- Il visual principale deve far capire un passaggio o mostrare un risultato. Se puoi sostituirlo con una foto di persone al lavoro senza cambiare il messaggio, rivedi la composizione. Usa esempi leggibili e dichiarati quando rappresentano un’anteprima.
+- Lascia spazio vuoto. Accorpa i contenuti brevi a un blocco pertinente. Elimina i blocchi che servono solo a riempire la griglia e le altezze forzate per pareggiare contenuti diversi.
 - Usa la scala `4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96 px`. Parti da 8 px tra elementi affini, 24 px tra gruppi e 48 px su mobile o 96 px su desktop tra sezioni.
-- Contenuto del sito fino a 1200 px, con margini laterali minimi di 16 px su mobile, 24 px su tablet e 32 px su desktop. Impila le colonne quando perdono leggibilità.
+- Margini laterali minimi di 16 px su mobile e 24 px su tablet. Su desktop la landing può occupare circa l’88% del viewport, fino a 1792 px. Mantieni le colonne di testo a misura di lettura e impilale quando perdono leggibilità.
 
 ## Tipografia
 
-- **Atkinson Hyperlegible Next**. 700 per i titoli, 600 per i controlli, 400 per il testo. Usa una sola famiglia.
-- Scala in px (dimensione/interlinea, mobile → desktop). H1 `36/40 → 64/68`, H2 `28/34 → 44/48`, testo `16/24`, controlli `14/20`. Converti in `rem` e verifica gli a capo con testo reale.
+- **Atkinson Hyperlegible Next**. 700 per i titoli di supporto, 600 per i controlli, 400 per il testo. Usa **Barlow Condensed 800** per la hero e i titoli editoriali delle sezioni principali.
+- Scala in px (dimensione/interlinea, mobile → desktop). H1 standard `36/40 → 64/68`, H2 `28/34 → 44/48`, testo `16/24`, controlli `14/20`. Converti in `rem` e verifica gli a capo con testo reale.
 - Paragrafi allineati a sinistra, circa 55–70 caratteri per riga. Importi confrontabili allineati a destra.
 
 ## Palette
@@ -45,6 +54,8 @@ Usa il verde come unico accento di marca. Per gli stati, abbina sempre un’etic
 
 ## Uso e verifica
 
+- Prima di implementare una nuova direzione, confronta due bozzetti della hero e del primo scroll con il riferimento reale. Scegli quello con gerarchia più forte e un passaggio naturale tra le sezioni.
+- Prima di consegnare, affianca le schermate della pagina effettiva al riferimento a 1440 e 390 px. Controlla che titolo e CTA siano visibili, che la sezione successiva si intraveda e che gli allineamenti reggano al primo scroll. Allega i render finali e prova la CTA.
 - Etichette visibili nei form, errori accanto al campo e pulsanti che nominano l’azione.
 - Verifica WCAG AA, inclusi contrasto del testo normale ≥ 4,5:1, focus visibile e navigazione da tastiera.
 - Verifica il layout a 320, 390, 768 e 1440 px e al 200% di zoom. Prova etichette lunghe e stati vuoto, caricamento, errore e successo.

@@ -6,9 +6,17 @@ Keep this repo small, clean and organized.
 
 - InsurTech is an AI-native insurance broker for Italian businesses, starting with SMEs and a working target of fewer than 500 employees. The first vertical is open, with broader commercial coverage as the long-term goal.
 - The MVP makes quote requests fast and clear. Collect the information our team needs to request quotes from insurers.
-- Start website work only when the user explicitly requests it. The first page is a public landing page with a quote-request CTA in the hero. Use placeholders until the public name and logo are chosen. The CEO demo uses “Attimo” as concept branding.
+- Start website work only when the user explicitly requests it. The first page is the public landing page.
 - The customer journey is a short contact and company wizard, sign-in, then a guided chat for risk details and optional policy uploads for coverage-gap review.
 - Admin and customer dashboards follow the quote-request flow.
+
+## Public landing
+
+- Use “Assicura la tua azienda in 48h” in the preview hero. The timing is working copy supplied for the draft. Verify it before public launch.
+- Use [Jet HR](https://www.jethr.com/) as the quality benchmark for headline clarity, viewport composition and a visible handoff into the next section. Inspect desktop and mobile. Follow the landing art direction in `design.md` with our palette, type and an original composition.
+- Use customer-facing sections for exploring risks, understanding the broker’s role, reviewing existing policies and common questions. Tie each image to the specific content it accompanies. Draft plausible copy for sections still being defined. Keep prototype reports and internal workflows out of the landing. Reserve insurer names, customer proof and numeric claims for verified facts.
+- The public name and logo are pending. Use a neutral text placeholder in previews. “Attimo”, its mark and any derived favicon are demo assets that require explicit approval for public use.
+- **Hero CTA.** “Richiedi una quotazione” opens the company step with the VAT number or website entered in the hero.
 
 ## Product principles
 
