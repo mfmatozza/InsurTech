@@ -52,10 +52,14 @@ summary:focus-visible {
 }
 
 #contenuto,
-#identificativo-azienda,
 h2[id],
 h3[id] {
   scroll-margin-block-start: calc(var(--header-size) + 1.5rem);
+}
+
+/* Lower CTAs jump to the hero input: overshoot so the page lands at the top with the whole hero visible. */
+#identificativo-azienda {
+  scroll-margin-block-start: 100vh;
 }
 
 .shell {
@@ -114,7 +118,7 @@ h3[id] {
 .header-inner nav {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .header-inner nav a,
@@ -128,11 +132,13 @@ h3[id] {
 
 .header-inner nav a {
   display: inline-flex;
+  font-size: 1.0625rem;
   text-decoration: none;
+  transition: color 150ms ease;
 }
 
 .header-inner nav a:hover {
-  text-decoration: underline;
+  color: var(--green);
 }
 
 .header-inner nav .wide-nav-link {
@@ -894,6 +900,7 @@ h2 {
   letter-spacing: -0.015em;
   line-height: 1.25;
   list-style: none;
+  transition: color 150ms ease;
 }
 
 .disclosure summary::-webkit-details-marker {
@@ -915,8 +922,7 @@ h2 {
 }
 
 .disclosure summary:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
+  color: var(--green);
 }
 
 .disclosure p {
